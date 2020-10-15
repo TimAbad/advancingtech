@@ -1,7 +1,9 @@
 # start from base
 FROM ubuntu:latest
 
+#Set ENV TERM variable
 ENV TERM linux
+
 ARG DEBIAN_FRONTEND=noninteractive 
 
 # Install updates and applications
