@@ -1,7 +1,13 @@
+#build: docker build -t <your_app_name> .
+#run:   docker run -d --name <container_name> -p 8080:80 <your_app_name>
+#login: docker exec -it <container_name> bash 
+
 # start from base
 FROM ubuntu:latest
 
+#Set ENV TERM variable
 ENV TERM linux
+
 ARG DEBIAN_FRONTEND=noninteractive 
 
 # Install updates and applications
